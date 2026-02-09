@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    ports:
+      - "7860:7860"
+    environment:
+      - NEON_DB_URL=postgresql://neondb_owner:npg_ukfdnO1U6siv@ep-bitter-mountain-a7c5kvdr-pooler.ap-southeast-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+      - BETTER_AUTH_SECRET=m3cSkzyIycR8U3c7nAbPgNTe6HyQVnRR
+      - PORT=7860
+    env_file:
+      - .env
+    restart: unless-stopped

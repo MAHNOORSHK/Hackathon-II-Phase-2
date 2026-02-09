@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"D:\\\\Mahnoor\\\\Q4 Agentic AI\\\\Hackathon II\\\\Hackathon-II Phase 2\\\\history\"\" 2>nul || echo \"Directory does not exist yet \")",
+      "Bash(test:*)",
+      "Bash(.specify/scripts/powershell/check-prerequisites.ps1 -Json -RequireTasks -IncludeTasks)",
+      "Bash(npm run dev:*)",
+      "Bash(git fetch:*)",
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git ls-tree:*)",
+      "Bash(\"venv/Scripts/python\" -m pip install -r requirements.txt --quiet)",
+      "Bash(\"venv/Scripts/python\" -m pip list)",
+      "Bash(\"venv/Scripts/python\" -m pip install --upgrade pip setuptools wheel)",
+      "Bash(\"venv/Scripts/python\" -m pip install -r requirements.txt)",
+      "Bash(\"venv/Scripts/python\" -m pip install fastapi uvicorn sqlmodel python-dotenv python-multipart --only-binary :all:)",
+      "Bash(\"venv/Scripts/python\" -m pip install psycopg pyjwt)",
+      "Bash(ConvertFrom-Json -AsHashtable)",
+      "Bash(powershell -Command:*)",
+      "Bash(pip install:*)",
+      "Bash(python:*)"
+    ]
+  }
+}
